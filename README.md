@@ -6,6 +6,8 @@ on geojson.io: <https://geojson.io/#data=data:text/x-url,https%3A%2F%2Fraw.githu
 
 on Google Maps: <https://www.google.com/maps/d/u/0/edit?mid=1NjXfv4QNknNBu5NxOTnUoRictWhNfQM&usp=sharing>
 
+see more maps on <https://alifeee.co.uk/maps/>
+
 ![screenshot of map showing many markers. one has a popup with information](./images/map.png)
 
 ## Generate
