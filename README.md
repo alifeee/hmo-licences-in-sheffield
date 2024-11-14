@@ -2,6 +2,10 @@
 
 HMO licences from <https://www.sheffield.gov.uk/housing/houses-in-multiple-occupation> displayed on a map.
 
+on geojson.io: <https://geojson.io/#data=data:text/x-url,https%3A%2F%2Fraw.githubusercontent.com%2Falifeee%2Fhmo-licences-in-sheffield%2Frefs%2Fheads%2Fmain%2Fhmos.geojson>
+
+on Google Maps: <https://www.google.com/maps/d/u/0/edit?mid=1NjXfv4QNknNBu5NxOTnUoRictWhNfQM&usp=sharing>
+
 ## Generate
 
 the script takes around 10 minutes and should report an ETA when run
@@ -46,4 +50,12 @@ git clone git@github.com:pvernier/csv2geojson.git
 (cd csv2geojson/; go build main.go)
 ./csv2geojson/main hmos.csv
 ```
+
+make GPX by using an online tool like <https://products.aspose.app/gis/conversion/geojson-to-gpx>
+
+## make google maps map
+
+create a KML file by uploading `hmos.geojson` to <https://geojson.io/> and `Save > KML`
+
+import it to Google Maps ([how?](https://www.google.com/maps/about/mymaps/)), view the data table, duplicate the "Permitted Occupants" column and change the type to `number`, and style by Permitted Occupants, range 10 (or otherwise).
 
