@@ -1,0 +1,5 @@
+# secrets
+/.env
+
+# libraries
+/csv2geojson
