@@ -22,10 +22,11 @@ the script takes around 10 minutes and should report an ETA when run
 
 a `hmos.csv` file should now be available. there may be blank rows to be manually set, find them with:
 
-```
+```bash
+file="hmos.csv"
 while read num; do
-  sed "${num}"'q;d' hmos.csv
-done <<< $(cat hmos.csv | csvtool namedcol latitude - | awk '$0 ~ "null" {print NR}')
+  sed "${num}"'q;d' "${file}"
+done <<< $(cat "${file}" | csvtool namedcol latitude - | awk '$0 ~ "null" {print NR}')
 ```
 
 add some style information (from "Permitted Occupants" column)
@@ -40,9 +41,9 @@ colors=(0A2F51 0F596B 16837A 1D9A6C 48B16D 74C67A ADDAA1 DEEDCF)
 while read row; do
   occupants=$(echo "${row}" | csvtool col 5 -)
   index=$(($occupants - 4))
-	[[ $index -lt 0 ]] && index=0
-	[[ $index -ge "${#colors[@]}" ]] && index=$(( "${#colors[@]}" - 1 ))
-	echo "home,#${colors[$index]}"
+  [[ $index -lt 0 ]] && index=0
+  [[ $index -ge "${#colors[@]}" ]] && index=$(( "${#colors[@]}" - 1 ))
+  echo "home,#${colors[$index]}"
 done <<< $(cat hmos.csv | awk 'NR>1') | sed '1s/^/marker-symbol,marker-color\n/' > /tmp/hmo_colors.csv
 csvtool paste hmos.csv /tmp/hmo_colors.csv > /tmp/hmos.csv; mv /tmp/hmos.csv hmos.csv
 ```
@@ -62,4 +63,3 @@ make GPX by using an online tool like <https://products.aspose.app/gis/conversio
 create a KML file by uploading `hmos.geojson` to <https://geojson.io/> and `Save > KML`
 
 import it to Google Maps ([how?](https://www.google.com/maps/about/mymaps/)), view the data table, duplicate the "Permitted Occupants" column and change the type to `number`, and style by Permitted Occupants, range 10 (or otherwise).
-
