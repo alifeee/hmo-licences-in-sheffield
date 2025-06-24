@@ -1,4 +1,4 @@
-Address 1,Address 2,Address 3,Postcode,Permitted Occupants,Licence issue date,Licence expiry date,Licence number,latitude,longitude,geocoded_address,marker-symbol,marker-color
+Address 1,Address 2,Address 3,Postcode,Permitted Occupants,Licence Issue Date,Licence Expiry Date,Licence Number,latitude,longitude,geocoded_address,marker-symbol,marker-color
 Flat 1b,1,Abbeydale Road,S7 1FA,7,17-Nov-23,20-Jun-28,6272,53.3661799,-1.4747742,"1b, 1 Abbeydale Rd, Highfield, Sheffield S7 1FA, UK",home,#1D9A6C
 Flat 1a,1,Abbeydale Road,S7 1FA,6,17-Nov-23,20-Jun-28,6271,53.3661799,-1.4747742,"1a, 1 Abbeydale Rd, Highfield, Sheffield S7 1FA, UK",home,#16837A
 Flat 1c,1,Abbeydale Road,S7 1FA,6,17-Nov-23,20-Jun-28,6273,53.3661799,-1.4747742,"1c, 1 Abbeydale Rd, Highfield, Sheffield S7 1FA, UK",home,#16837A

@@ -29,7 +29,10 @@ while read num; do
 done <<< $(cat "${file}" | csvtool namedcol latitude - | awk '$0 ~ "null" {print NR}')
 ```
 
-also change the first few columns to be `Address 1,Address 2,Address 3,`
+also:
+
+- change the first few columns to be `Address 1,Address 2,Address 3,`
+- change the column headers to be the same as previous sheets
 
 add some style information (from "Permitted Occupants" column)
 
