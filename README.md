@@ -53,6 +53,10 @@ while read row; do
   echo "home,#${colors[$index]}"
 done <<< $(cat "${file}" | awk 'NR>1') | sed '1s/^/marker-symbol,marker-color\n/' > /tmp/hmo_colors.csv
 csvtool paste "${file}" /tmp/hmo_colors.csv > /tmp/hmos.csv; mv /tmp/hmos.csv "${file}"
+
+# run stats
+./stats.sh > stats.txt
+./stats_dates.sh > stats_dates.txt
 ```
 
 to turn this into a geojson file, use <a href="https://github.com/pvernier/csv2geojson">https://github.com/pvernier/csv2geojson</a> with:
@@ -70,3 +74,25 @@ make GPX by using an online tool like <https://products.aspose.app/gis/conversio
 create a KML file by uploading `hmos.geojson` to <https://geojson.io/> and `Save > KML`
 
 import it to Google Maps ([how?](https://www.google.com/maps/about/mymaps/)), view the data table, duplicate the "Permitted Occupants" column and change the type to `number`, and style by Permitted Occupants, range 10 (or otherwise).
+
+## statistics
+
+There are two stats scripts:
+
+```bash
+$ ./stats.sh 
+hmos_2024-09-09.csv
+  total licences: 1745
+  6.29 mean occupants (IQR 2 [5 - 7]) (median 6)
+  amount by postcode:
+    S1 (60), S2 (214), S3 (100), S4 (12), S5 (18), S6 (90), S7 (62), 
+    S8 (10), S9 (5), S10 (742), S11 (425), S12 (1), S13 (2), S14 (1), S20 (1), S35 (1), S36 (1), 
+  streets with most licences: Crookesmoor Road (78), Norfolk Park Road (72), Ecclesall Road (48), Harcourt Road (38), School Road (29),
+hmos_2025-01-28.csv
+  total licences: 1459
+  …
+```
+
+```bash
+
+```
