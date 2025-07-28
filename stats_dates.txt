@@ -1,7 +1,7 @@
 hmos_2024-09-09.csv
   1745 dates in 1745 lines (627 unique issuing dates)
-    849 expired
-    896 active
+    857 expired
+    888 active
   Licence Issue Dates:
     Sun 06 Jan 2019, Sun 06 Jan 2019, … … … Wed 12 Jun 2024, Tue 09 Jul 2024, 
     Monday (275), Tuesday (440), Wednesday (405), Thursday (352), Friday (256), Saturday (5), Sunday (12), 
@@ -11,8 +11,8 @@ hmos_2024-09-09.csv
     2024 (159), 2025 (824), 2026 (263), 2027 (225), 2028 (185), 2029 (89), 
 hmos_2025-01-28.csv
   1459 dates in 1459 lines (561 unique issuing dates)
-    547 expired
-    912 active
+    555 expired
+    904 active
   Licence Issue Dates:
     Mon 28 Oct 2019, Mon 04 Nov 2019, … … … Mon 06 Jan 2025, Tue 14 Jan 2025, 
     Monday (243), Tuesday (380), Wednesday (338), Thursday (272), Friday (211), Saturday (6), Sunday (9), 
@@ -22,8 +22,8 @@ hmos_2025-01-28.csv
     2025 (681), 2026 (264), 2027 (225), 2028 (184), 2029 (105), 
 hmos_2025-03-03.csv
   1315 dates in 1315 lines (523 unique issuing dates)
-    401 expired
-    914 active
+    409 expired
+    906 active
   Licence Issue Dates:
     Mon 28 Oct 2019, Mon 04 Nov 2019, … … … Wed 05 Mar 2025, Wed 05 Mar 2025, 
     Monday (217), Tuesday (339), Wednesday (314), Thursday (244), Friday (189), Saturday (4), Sunday (8), 
@@ -33,8 +33,8 @@ hmos_2025-03-03.csv
     2025 (533), 2026 (262), 2027 (225), 2028 (184), 2029 (111), 
 hmos_2025-06-16.csv
   1016 dates in 1016 lines (460 unique issuing dates)
-    59 expired
-    957 active
+    67 expired
+    949 active
   Licence Issue Dates:
     Mon 06 Jan 2020, Mon 06 Apr 2020, … … … Fri 20 Jun 2025, Fri 20 Jun 2025, 
     Monday (154), Tuesday (279), Wednesday (257), Thursday (174), Friday (140), Saturday (4), Sunday (8), 
@@ -42,3 +42,14 @@ hmos_2025-06-16.csv
   Licence Expiry Dates:
     Mon 16 Jun 2025, Mon 16 Jun 2025, … … … Sat 23 Feb 2030, Tue 12 Mar 2030, 
     2025 (189), 2026 (264), 2027 (225), 2028 (183), 2029 (146), 2030 (9), 
+hmos_2025-07-16.csv
+  995 dates in 995 lines (448 unique issuing dates)
+    4 expired
+    991 active
+  Licence Issue Dates:
+    Mon 06 Jan 2020, Mon 20 Apr 2020, … … … Tue 15 Jul 2025, Wed 23 Jul 2025, 
+    Monday (156), Tuesday (280), Wednesday (248), Thursday (157), Friday (142), Saturday (4), Sunday (8), 
+    2020 (14), 2021 (230), 2022 (319), 2023 (167), 2024 (165), 2025 (100), 
+  Licence Expiry Dates:
+    Mon 21 Jul 2025, Mon 21 Jul 2025, … … … Sun 07 Apr 2030, Sun 09 Jun 2030, 
+    2025 (126), 2026 (262), 2027 (225), 2028 (183), 2029 (176), 2030 (23), 
