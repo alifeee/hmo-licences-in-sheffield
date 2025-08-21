@@ -33,3 +33,10 @@ hmos_2025-07-16.csv
     S1 (50), S2 (143), S3 (78), S4 (9), S5 (13), S6 (55), S7 (53), 
     S8 (9), S9 (3), S10 (397), S11 (178), S12 (2), S13 (2), S20 (1), S35 (1), S36 (1), 
   streets with most licences: Crookesmoor Road (41), Norfolk Park Road (34), Shoreham Street (22), Ecclesall Road (21), Matilda Street (20), 
+hmos_2025-08-11.csv
+  total licences: 1025
+  6.42 mean occupants (IQR 2 [5 - 7]) (median 6)
+  amount by postcode:
+    S1 (52), S2 (146), S3 (78), S4 (9), S5 (13), S6 (56), S7 (54), 
+    S8 (9), S9 (3), S10 (405), S11 (193), S12 (2), S13 (2), S20 (1), S35 (1), S36 (1), 
+  streets with most licences: Crookesmoor Road (43), Norfolk Park Road (36), Ecclesall Road (24), Shoreham Street (21), Matilda Street (21), 

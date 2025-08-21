@@ -93,6 +93,4 @@ hmos_2025-01-28.csv
   …
 ```
 
-```bash
-
-```
+and also `stats_dates.sh`

@@ -2,6 +2,9 @@
 
 echo "this takes a while to run to parse all the dates..." >> /dev/stderr
 
+echo "run at: $(date)"
+echo ""
+
 for csv in hmos_*.csv; do
   datestamps=""
   days=""
